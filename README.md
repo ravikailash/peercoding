@@ -23,6 +23,6 @@
 ### Who do I talk to? ###
 
 * Repo owner or admin
-    * Vats, Arpita -  arpita.vats08@gmail.com
+    * Vats, Arpita -  arpita.vats09@gmail.com
     * K.Rajendran, Ravi - ravikailash5794@gmail.com
 * Other community or team contact
