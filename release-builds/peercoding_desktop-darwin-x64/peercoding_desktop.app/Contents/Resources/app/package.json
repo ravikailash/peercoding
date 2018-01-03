@@ -1,0 +1,24 @@
+{
+  "name": "peercoding_desktop",
+  "version": "1.0.0",
+  "description": "PeerCoding-A collaborative code editing environment for coding competitions",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ravikailash@bitbucket.org/peercoding/peercoding_desktop.git"
+  },
+  "author": "Arpita Vats, Ravi K.Rajendran",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/peercoding/peercoding_desktop#readme",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "electron-packager": "^10.1.1"
+  }
+}

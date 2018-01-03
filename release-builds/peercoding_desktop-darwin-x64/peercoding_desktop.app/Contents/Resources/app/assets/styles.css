@@ -1,0 +1,157 @@
+body {
+	background: white;
+}
+
+.container {
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    border: 1px solid green;
+	padding: 30px 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.default-container {
+	width: 350px;
+    height: 370px;
+}
+
+.register-container {
+	width: 350px;
+    height: 490px;
+}
+
+.dashboard-container {
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    border: 1px solid green;
+	padding: 30px 20px;
+    font-size: 20px;
+    text-align: center;
+	width: 80%;
+    height: 70%;
+}
+
+#index-logo {
+	background: transparent;
+	color: #000;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+}
+
+#index-logo span {
+	font-size: 37px;
+	color: #5379fa !important;
+}
+
+.index-logo {
+	background: transparent;
+	color: #000;
+	font-family: 'Exo', sans-serif;
+	font-size: 25px;
+	width: 20%;
+	height: 5%;
+	text-align: center;
+	float: right;
+}
+
+.index-logo span {
+	font-size: 27px;
+	color: #5379fa !important;
+}
+
+.forms{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+/*	border: 1px solid blue;*/
+	background: transparent;
+}
+
+.login-form{
+	width: 350px;
+	height: 400px;
+	padding: 80px 40px;
+}
+
+.register-form{
+	width: 350px;
+	height: 420px;
+	padding: 20px 40px;
+}
+
+.forms h3{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #000;
+}
+
+.forms input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.forms input[type="text"],
+.forms input[type="password"]{
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid #5379fa;
+	border-radius: 3px;
+	background: transparent;
+	height: 30px;
+	outline: none;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+}
+
+.forms input[type="submit"]{
+	border: 2px solid #fff;
+	background: #5379fa;
+	cursor: pointer;
+	border-radius: 20px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.forms input[type="submit"]:hover {
+	opacity: 0.9;
+	color: black;
+}
+
+.forms input[type="submit"]:active {
+	background: blue;
+	color: #a18d6c;
+	opacity: 0.6;
+}
+
+.forms input[type="text"]:focus,
+.forms input[type="password"]:focus{
+	border: none;
+	border-bottom: 2px solid #5379fa;
+}
+
+.forms p{
+	font-family: 'Exo', sans-serif;
+	font-size: 15px;
+}
+
+.forms a{
+	text-decoration: none;
+	color: #5379fa;
+}
+
+::placeholder{
+	font-size: 15px;
+}

@@ -7,24 +7,15 @@
 
 * Quick summary
 * Version
-* Necessary packages needed to run this source code
-* Guidelines
+* Product (phase: alpha.v#1.0.0)
+* Source code (yet to come)
+* Necessary packages needed to run this source code (yet to come)
+* Guidelines (yet to come)
 
-### How do I get set up? ###
-
-* Summary of set up
-	* Configuration
-	* Dependencies
-	* Database configuration
-	* How to run tests
-	* Deployment instructions
-* Read the guidelines
-* Install the dependencies
-* Run the database
-* Run the electon app
 
 ### Contribution guidelines ###
 
+**To contribute and get the source code, contact us**
 * Writing tests
 * Code review
 * Other guidelines
@@ -32,4 +23,6 @@
 ### Who do I talk to? ###
 
 * Repo owner or admin
+    * Vats, Arpita -  arpita.vats08@gmail.com
+    * K.Rajendran, Ravi - ravikailash5794@gmail.com
 * Other community or team contact

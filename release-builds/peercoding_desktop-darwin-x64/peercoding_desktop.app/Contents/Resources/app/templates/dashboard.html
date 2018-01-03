@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard-PeerCoding</title>
+	<link rel="stylesheet" href="./../assets/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.dashboard-container p {
+			 color: #5379fa; font-family: monospace sans-serif;
+		}
+		.codes p {
+			text-align: left; color: black;
+		}
+		
+		.codes .file-name {
+			 float: right; color: mediumvioletred; padding: 10px 20px 0 0;
+		}
+		.codes .line-number {
+			color: dimgray; font-size: 15px;
+		}
+		.code-left {
+			float: left; width: 48%; height: 270px; 
+			border: 2px solid gray;  overflow-y: scroll;
+		}
+		.code-right {
+			float: right; width: 48%; height: 270px;
+			border: 2px solid gray;  overflow-y: scroll;
+		}
+		
+		.code-left div, .code-right div {
+			padding-top: 20px;
+			padding-left: 20px;
+			text-align: left;
+			font-size: 17px;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<div class="index-logo">
+		<div> Peer<span>Coding</span> </div>
+	</div>
+	<div class="dashboard-container">
+		<h2>Dashboard</h2>
+		<form action="login.html">
+    		<button class="btn btn-primary " style="float: left;">Logout</button>
+		</form>
+		
+		<button class="btn btn-success" style="float: right;">+New Session</button>
+		<p>
+			A collaborative code editing environment
+		</p>
+		<br>
+		<div class="codes">
+			<div class="code-left">
+				<span class="file-name">file_1.py</span>
+				<br> <hr style="color: blue;">
+				<div>
+					<span class="line-number">1. </span>
+					<span style="color: green">def</span> <span style="color: dodgerblue">main</span> &#40; &#41; <br>
+					<span class="line-number">2. </span>
+					&nbsp; &nbsp; <span style="color: darkgreen">print</span> &#40; <span style="color: chocolate">'My code is here'</span> &#41; <br>
+					<span class="line-number">3. </span>
+					<br>
+					<span class="line-number">4. </span>
+					 main &#40; &#41;
+				</div>
+			</div>
+			<div class="code-right">
+				<span class="file-name">file_2.R</span> 
+					<br> <hr>
+				<div>
+					<span class="line-number">1. </span>main &larr; <span style="color: blue;">function</span> &#40; &#41; &#123; <br>
+					<span class="line-number">2. </span>&nbsp; &nbsp; print &#40; <span style="color: darkseagreen">'My partner code is here'</span> &#41; <br>
+					<span class="line-number">3. </span>&#125;  <br>
+					<span class="line-number">4. </span><br>
+					<span class="line-number">5. </span><span style="color: cornflowerblue">main &#40; &#41;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
