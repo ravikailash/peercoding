@@ -2,7 +2,7 @@
   "name": "peercoding_desktop",
   "version": "1.0.0",
   "description": "PeerCoding-A collaborative code editing environment for coding competitions",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",

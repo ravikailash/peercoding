@@ -8,12 +8,32 @@ const {app, BrowserWindow, Menu, ipcMain} = electron;
 // SET ENV
 //process.env.NODE_ENV = 'production'
 
+// Importing all the necessary packages
+var http = require('http');
+//var bodyParser = require('body-parser'),
+//	moment = require('moment'),
+//	multer = require('multer');
+//var crypto = require('crypto');
+//var	mongoose = require('mongoose');
+
+
+// // CONNECTION TO THE MONGO-DATABASE
+//mongoose.connect("mongodb://localhost:27017/peercoding", function(err, db) {
+//	if (!err) {
+//		console.log('Connected to MongoDB successfully');
+//	} else {
+//		console.log("Can't connect to MongoDB; Retry again.");
+//	}
+//	database = db;
+//});
+
 let mainWindow;
 
 // Listen for the app to be ready
 app.on('ready', function(){
 	// Create a new window
-	mainWindow = new BrowserWindow({});
+	mainWindow = new BrowserWindow({height: 650, width: 800, 
+									minHeight: 650, minWidth: 800});
 	
 	// Loading the HTML
 	mainWindow.loadURL(url.format({

@@ -1,0 +1,8 @@
+# Ignore the OS Files
+.DS_Store
+
+# Ignore the locally added dependencies
+node_modules
+
+# Ignore the release-builds (for now)
+release-builds

@@ -1,5 +1,7 @@
 body {
 	background: white;
+	overflow-y: scroll;
+	overflow-x: scroll;
 }
 
 .container {
@@ -25,17 +27,17 @@ body {
 }
 
 .dashboard-container {
-	top: 50%;
-    left: 50%;
-	transform: translate(-50%, -50%);
+	top: 5%;
+	left: 65px;
     display: block;
     position: absolute;
     border: 1px solid green;
-	padding: 30px 20px;
+	padding: 20px 20px;
+	margin-left: 10px;
     font-size: 20px;
     text-align: center;
-	width: 80%;
-    height: 70%;
+	width: 90%;
+    height: 90%;
 }
 
 #index-logo {
@@ -151,6 +153,100 @@ body {
 	text-decoration: none;
 	color: #5379fa;
 }
+
+.navigation {
+	position: absolute;
+	height: 100%;
+	width: 65px;
+	background: #f0f0f0;
+	padding-top: 30px;
+	padding-left: 10px;
+	min-width: 60px;
+}
+
+.profilePicture {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.navbar-icons {
+	margin-top: 10px;
+	padding-top: 40px;
+}
+
+.nav-icon {
+	position: inherit;
+	width: 35px;
+	height: 35px;
+}
+
+.nav-primary{
+	margin-bottom: 20px;
+}
+
+.nav-secondary {
+	margin-top: 100px;
+}
+
+.sidenavbar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 65px;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.sidenavbar .nav-top {
+	padding-top: 35px;
+	padding-left: 10px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.navbar-details {
+	padding-top: 40px;
+}
+
+.sidenavbar a{
+	padding: 8px 0 5px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #818181;
+    display: block;
+    transition: 0.3s;
+	margin-bottom: 20px;
+}
+
+.sidenavbar-secondary {
+	margin-top: 110px;
+}
+.sidenavbar a:hover {
+	color: #f1f1f1;
+}
+
+.sidenavbar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 
 ::placeholder{
 	font-size: 15px;

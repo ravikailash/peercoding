@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dashboard-PeerCoding</title>
+	<title>Dashboard-ravikailash</title>
 	<link rel="stylesheet" href="./../assets/styles.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./../assets/bootstrap-3.3.5/css/bootstrap.css">
 	<style>
 		.dashboard-container p {
 			 color: #5379fa; font-family: monospace sans-serif;
@@ -39,48 +39,68 @@
 	
 </head>
 <body>
+	
+	<div class="navigation">
+		<a href="#"><img class="profilePicture" src="./../assets/uploads/profilepics/raviraj.png" alt="./../assets/img/male.png" onclick="openNav()"></a>
+		<div class="navbar-icons">
+			<a href="profile.html" title="Profile">
+				<img class="nav-icon nav-primary" src="./../assets/img/home_blk.png" alt="Profile">
+			</a> <br>
+			<a href="dashboard.html" title="Dashboard">
+				<img class="nav-icon nav-primary" src="./../assets/img/dashboard_blk.png" alt="Dashboard">
+			</a> <br>
+			<a href="sessions.html" title="Sessions">
+				<img class="nav-icon nav-primary" src="./../assets/img/session_blk.png" alt="Sessions">
+			</a> <br>
+			<a href="files.html" title="Files">
+				<img class="nav-icon nav-primary" src="./../assets/img/files_blk.png" alt="Files">
+			</a> <br>
+			<a href="settings.html" title="Settings">
+				<img class="nav-icon nav-primary" src="./../assets/img/settings_blk.png" alt="Settings">
+			</a> <br>
+			
+			<a href="login.html" title="Logout">
+				<img class="nav-icon nav-secondary" src="./../assets/img/logout_blk.png" alt="Log out">
+			</a> <br>
+		</div>
+	</div>
+		
+	
+	<div id="navbar" class="sidenavbar">
+		<p class="nav-top">Ravi Rajendran</p>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		
+		<div class="navbar-details">
+			<a href="profile.html">Profile</a>
+			<a href="dashboard.html">Dashboard</a>
+			<a href="sessions.html">Sessions</a>
+			<a href="files.html">Files</a>
+			<a href="settings.html">Settings</a>
+			<a class="sidenavbar-secondary" href="login.html">Logout</a>
+		</div>
+	</div>
+		
 	<div class="index-logo">
 		<div> Peer<span>Coding</span> </div>
 	</div>
+	
 	<div class="dashboard-container">
+		<button class="btn btn-success" style="float: right; top:0%;">+New Session</button>
 		<h2>Dashboard</h2>
-		<form action="login.html">
-    		<button class="btn btn-primary " style="float: left;">Logout</button>
-		</form>
-		
-		<button class="btn btn-success" style="float: right;">+New Session</button>
+		<br>
 		<p>
 			A collaborative code editing environment
 		</p>
 		<br>
-		<div class="codes">
-			<div class="code-left">
-				<span class="file-name">file_1.py</span>
-				<br> <hr style="color: blue;">
-				<div>
-					<span class="line-number">1. </span>
-					<span style="color: green">def</span> <span style="color: dodgerblue">main</span> &#40; &#41; <br>
-					<span class="line-number">2. </span>
-					&nbsp; &nbsp; <span style="color: darkgreen">print</span> &#40; <span style="color: chocolate">'My code is here'</span> &#41; <br>
-					<span class="line-number">3. </span>
-					<br>
-					<span class="line-number">4. </span>
-					 main &#40; &#41;
-				</div>
-			</div>
-			<div class="code-right">
-				<span class="file-name">file_2.R</span> 
-					<br> <hr>
-				<div>
-					<span class="line-number">1. </span>main &larr; <span style="color: blue;">function</span> &#40; &#41; &#123; <br>
-					<span class="line-number">2. </span>&nbsp; &nbsp; print &#40; <span style="color: darkseagreen">'My partner code is here'</span> &#41; <br>
-					<span class="line-number">3. </span>&#125;  <br>
-					<span class="line-number">4. </span><br>
-					<span class="line-number">5. </span><span style="color: cornflowerblue">main &#40; &#41;</span>
-				</div>
-			</div>
-		</div>
 	</div>
+	<script>
+		function openNav() {
+			document.getElementById('navbar').style.width = '170px';
+		}
+		function closeNav() {
+			document.getElementById('navbar').style.width = '0';
+		}
+	</script>
 	
 </body>
 </html>
