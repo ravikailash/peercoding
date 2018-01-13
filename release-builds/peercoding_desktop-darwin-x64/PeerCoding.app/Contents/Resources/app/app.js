@@ -6,7 +6,7 @@ const {app, BrowserWindow, Menu, ipcMain} = electron;
 
 
 // SET ENV
-//process.env.NODE_ENV = 'production'
+process.env.NODE_ENV = 'production'
 
 // Importing all the necessary packages
 var http = require('http');
